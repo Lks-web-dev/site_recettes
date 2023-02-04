@@ -41,9 +41,9 @@ div.separateur{
 
 div.contenu {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 350px;
+    margin: 25px 4px 20px 4px;
+    padding: 0 8px 20px 8px;
+    /* min-width: 350px; */
     border-radius: 2%;
     box-shadow: 5px 5px 6px 8px rgba(52, 54, 54, 0.377);
     overflow: visible;
@@ -78,7 +78,7 @@ img.info{
 table.info{
     position:absolute;
     bottom:0;
-    height:80px;
+    height:50px;
     width:100%;
     color:white;
     background-color:#6c829dc0;
@@ -86,18 +86,18 @@ table.info{
 
 table.info td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 table.info th{
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 8px;
 }
 
 .colonne{ /*ça revient à faire div.colonne1, div.colonne2*/
-    width: 45%;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -110,9 +110,7 @@ div.colonne h2{
 }
 
 div.colonne1{
-    /* border: 2px dashed red; */
     display: inline-block;
-    margin-right: 10%;
 }
 
 div.ingredient p{
@@ -122,11 +120,6 @@ div.ingredient p{
     margin-bottom: 0;
     text-align: center;
     font-size: 14px;
-}
-
-div.colonne2{
-    /* border: 2px dashed green; */
-    float: right;
 }
 
 table.preparation p.numero{
@@ -157,3 +150,47 @@ table.preparation td.preparation_etape{
 table.preparation tr{
     height: 40px;
 }
+
+/* Pour écran d'ordinateur */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        max-width: 600px;
+        margin: 60px auto 80px auto;
+        padding: 0 30px 30px 30px;
+    }
+
+    table.info{
+        height:80px;
+    }
+
+    table.info td{
+        font-size: 14px;
+    }
+    
+    table.info th{
+        font-size: 16px;
+        
+    }
+    .colonne{ /*ça revient à faire div.colonne1, div.colonne2*/
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    div.colonne1{
+        display:inline-block;
+        margin-right: 10%;
+    }
+    
+    div.ingredient p{
+        border: 1px solid lightgray;
+        padding: 10px 0;
+        margin-top: 8px;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    div.colonne2{
+        float: right;
+    }
+  }
