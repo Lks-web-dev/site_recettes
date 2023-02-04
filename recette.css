@@ -1,0 +1,159 @@
+*{ /*Selecteur universel : s'applique dans tout le doc*/
+    overflow: auto;
+}
+body{
+    background-color: #8BA1BB;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.centre{ /*! on ne précise pas d'élement car on veut que centre soit générique */
+    /* background-color: blue; */
+    text-align: center;
+    width: 100%;
+}
+
+div.categorie{
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: visible;
+}
+
+p.categorie{ /*on aurait pu mettre sans le p, ça fonctionne aussi */
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: azure;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -16px;
+    margin-bottom: 0;
+    padding: 8px 18px;
+    border-radius: 25%;
+}
+
+div.separateur{
+    height: 1px;
+    width: 100px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.contenu {
+    background-color: white;
+    margin: 60px 10% 80px 10%;
+    padding: 0 30px 30px 30px;
+    min-width: 350px;
+    border-radius: 2%;
+    box-shadow: 5px 5px 6px 8px rgba(52, 54, 54, 0.377);
+    overflow: visible;
+}
+
+h1{ /*On garde h1 car dans la page il n'y a qu'un seule h1*/
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+p.description{
+    display: inline-block;
+    text-align: center;
+    max-width: 400px;
+    font-size: 14px;
+    /* background-color: yellow; */
+}
+
+div.info{
+    position:relative
+}
+
+img.info{
+    display:block;
+    max-height: 400px;
+    min-height: 200px;
+    object-fit:cover;
+    background-color: rgba(211, 211, 211, 0.445);
+}
+
+table.info{
+    position:absolute;
+    bottom:0;
+    height:80px;
+    width:100%;
+    color:white;
+    background-color:#6c829dc0;
+}
+
+table.info td{
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+table.info th{
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+.colonne{ /*ça revient à faire div.colonne1, div.colonne2*/
+    width: 45%;
+    margin-top: 10px;
+}
+
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 2px solid #6c829d;
+    padding-bottom: 4px;
+}
+
+div.colonne1{
+    /* border: 2px dashed red; */
+    display: inline-block;
+    margin-right: 10%;
+}
+
+div.ingredient p{
+    border: 1px solid lightgray;
+    padding: 10px 0;
+    margin-top: 8px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+div.colonne2{
+    /* border: 2px dashed green; */
+    float: right;
+}
+
+table.preparation p.numero{
+    background-color:#6c829d;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+table.preparation td{
+    vertical-align: top;
+}
+
+table.preparation td.preparation_etape{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+table.preparation tr{
+    height: 40px;
+}
